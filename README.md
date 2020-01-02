@@ -24,16 +24,15 @@
 
 작성 중....
 
-## Working
-- BLtouch based auto leveling                                       ...Working
-- TMC2208기반 Hybrid Mode(Stealth/SpreadChop)기능 추가              ...Working
-- TMC2209기반으로 업그레이드                                        ...Working
-  - Coolstep
-  - StallGuard
-  - Dual z-axis 보정
 
 ## 적용 내역
 - S-curve acceleration
 - Babystepping
 - LCD 업그레이드
 - Noctua FAN을 이용한 팬 소음 감소
+- TMC2209기반으로 업그레이드
+  - Coolstep
+  - StallGuard
+  - Dual z-axis 보정
+  - BLtouch based auto leveling
+  - Hybrid Mode(Stealth/SpreadChop)기능 추가
