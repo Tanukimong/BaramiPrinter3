@@ -66,6 +66,12 @@ M84; Turn off th motors
 ~~~
 
 ### Machine Setting
+- Nozzle size : 1.75mm
+- Heating bed : yes
+- BED size
+    - x : 300
+    - y : 300
+    - z : 400
 ## Working
 - BLtouch based auto leveling
 - TMC2208기반 Hybrid Mode(Stealth/SpreadChop)기능 추가
