@@ -65,20 +65,17 @@ M106 S0; Turn off the cooling fan
 M84; Turn off th motors
 ~~~
 
-### Machine Setting
-- Nozzle size : 1.75mm
+### Mechanical Setting
+- Nozzle size : 0.4mm
+- Compatible material diameter : 1.75mm
 - Heating bed : yes
 - BED size
     - x : 300
     - y : 300
     - z : 400
+    
 ## Working
-- BLtouch based auto leveling
-- TMC2208기반 Hybrid Mode(Stealth/SpreadChop)기능 추가
-- TMC2209기반으로 업그레이드
-  - Coolstep
-  - StallGuard
-  - Dual z-axis 보정
+- [노후된 BED를 탈착식으로 업그레이드](https://ko.aliexpress.com/item/33041249544.html)
 
 ## 적용 내역
 - S-curve acceleration
@@ -88,6 +85,6 @@ M84; Turn off th motors
 - TMC2209기반으로 업그레이드
   - Coolstep
   - StallGuard
-  - Dual z-axis 보정
+  - Dual z-axis 보정 메뉴 추가
   - BLtouch based auto leveling
   - Hybrid Mode(Stealth/SpreadChop)기능 추가
