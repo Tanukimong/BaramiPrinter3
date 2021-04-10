@@ -72,19 +72,35 @@ M84; Turn off th motors
 - BED size
     - x : 300
     - y : 300
-    - z : 400
+    - z : 300
     
 ## Working
-- [노후된 BED를 탈착식으로 업그레이드](https://ko.aliexpress.com/item/33041249544.html)
+- 디스플레이 교체 작업
+- skr 1.3 교체 작업
+- 케이스 재설계 작업
 
 ## 적용 내역
-- S-curve acceleration
-- Babystepping
-- LCD 업그레이드
-- Noctua FAN을 이용한 팬 소음 감소
-- TMC2209기반으로 업그레이드
-  - Coolstep
-  - StallGuard
-  - Dual z-axis 보정 메뉴 추가
-  - BLtouch based auto leveling
-  - Hybrid Mode(Stealth/SpreadChop)기능 추가
+- v1
+  - S-curve acceleration
+  - Babystepping
+  - LCD 업그레이드
+  - Noctua FAN을 이용한 팬 소음 감소
+  - TMC2209기반으로 업그레이드
+    - Coolstep
+    - StallGuard
+    - Dual z-axis 보정 메뉴 추가
+    - BLtouch based auto leveling
+    - Hybrid Mode(Stealth/SpreadChop)기능 추가
+- v2
+  - 노후된 BED를 탈착식으로 업그레이드(https://ko.aliexpress.com/item/33041249544.html)
+  - Heater changed to 70W heater
+  - Thermistor changed to pt100 + pt100 amplifier board
+  - 12V to 24V convertor added for build station heater
+  - Heat break changed to Mellow cooper heat break
+  - Heat block changed to Mellow cooper heat block
+  - At 'Configuration.h'
+    - '#define TEMP_SENSOR_0 1' changed to '#define TEMP_SENSOR_0 20'
+    - '#define HEATER_0_MAXTEMP 275' changed to '#define HEATER_0_MAXTEMP 500'
+    - '#define CUSTOM_MACHINE_NAME "CR10s tanuki"' changed to '#define CUSTOM_MACHINE_NAME "Tanuki V2"'
+  - At 'pins_BTT_SKR.h'
+    - '#define TEMP_0_PIN       P0_24_A1' changed to '#define TEMP_0_PIN       P0_02_A7'
